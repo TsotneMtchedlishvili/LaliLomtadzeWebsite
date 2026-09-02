@@ -1,0 +1,6 @@
+#gradient {
+
+    position: absolute;
+    background-color: rgb(240, 86, 86);
+    z-index: -1;
+}

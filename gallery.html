@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    
+    <link rel="canonical" href="">
+
+    
+
+    <link rel="alternate" hreflang="ka" href="">
+    <link rel="alternate" hreflang="en" href="">
+    <link rel="alternate" hreflang="x-default" href="">
+
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/UI.css">
+    <link rel="stylesheet" href="Styles/gallery.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    
+
+    <title>Gallery</title>
+</head>
+<body>
+
+    <!-- <div class="backdrop_Blurry">
+        <div class="image_Preview_Container">
+            <button class="close_Preview_Button">
+                <img src="images/close-circle-svgrepo-com.svg" alt="" class="close_Button_Image">
+            </button>
+            <div class="preview_Image_Centerer">
+                <img src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8xOTM5NDA1XzRmY2QxOThjZWU5ZmIzYjE5ZGIyOGQzMTY1NGNiOTdjLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=3f37b07e6d40a013162969b609c1e21b3427c5b887a418b6295eac37da4148fd" alt="" class="image_Preview">
+            </div>
+        </div>
+    </div> -->
+
+    <header>
+        <div class="top_Panel ">
+
+            <div class="top_Panel_Before"></div>
+            <div class="logo_And_Btn">
+                <a href="index.html" class="nav_Logo">
+                    Lali Lomtadze Art
+                </a>
+
+                <button class="hamburger_Btn hamburger_Visible" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <div class="hamburger_Line hl1"></div>
+                    <div class="hamburger_Line hl2">
+                        <div class="hl_Piece1"></div>
+                        <div class="hl_Piece2"></div>
+                    </div>
+                    <div class="hamburger_Line hl3"></div>
+                </button>
+            </div>
+
+            <nav class="nav_Element">
+                <ul class="nav_List">
+                    <li class="nav_Item">
+                        <a href="index.html" class="nav_Link">Home</a>
+                    </li>
+                    <li class="nav_Item">
+                        <a href="about.html" class="nav_Link">About</a>
+                    </li>
+                    <li class="nav_Item">
+                        <a href="gallery.html" class="nav_Link">Gallery</a>
+                    </li>
+                    <li class="nav_Item">
+                        <a href="exhibition.html" class="nav_Link">Exhibitions</a>
+                    </li>
+                    <li class="nav_Item">
+                        <a href="contact.html" class="nav_Link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="sentinel" aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; pointer-events: none; opacity: 0;"></div>
+    </header>
+
+    <main>
+        <div class="hero_Landing">
+
+            <h1 class="gallery_Title">Gallery</h1>
+
+            <div class="tags_Container">
+                <button class="all gallery_Tag generic_Button tag_Pressed">All</button>
+                <button class="available gallery_Tag generic_Button">Available</button>
+                <button class="special_Offer gallery_Tag generic_Button">Special Offers</button>
+                <button class="wip gallery_Tag generic_Button">WIP</button>
+                <button class="new gallery_Tag generic_Button">New</button>
+            </div>
+        </div>
+
+        <div class="listings_Grid">
+
+            <!-- <article class="listed_Item">
+                <div class="Item_Thumbnail_Container">
+                    <button class="thumbnail_Navigation_Button_Left tnb">
+                        <img src="images/EpArrowLeftBold.svg" alt="">
+                    </button>
+                    <img src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8xOTM5NDA1XzRmY2QxOThjZWU5ZmIzYjE5ZGIyOGQzMTY1NGNiOTdjLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=3f37b07e6d40a013162969b609c1e21b3427c5b887a418b6295eac37da4148fd" alt="" class="listing_Preview">
+                    <button class="thumbnail_Navigation_Button_Right tnb">
+                        <img src="images/EpArrowRightBold.svg" alt="">
+                    </button>
+                </div>
+                <div class="listing_Description">
+                    <h2 class="item_Title">dumdum</h2>
+                    <div class="item_Sub_Description">
+                        <div class="item_Details">
+                            <p class="material_Type">oil and canvas</p>
+                            <p class="item_Dimension">20x25in</p>
+                            <div class="pricing">
+                                <span class="current_Price">$39999</span>
+                                <span class="original_Price">$999999</span>
+                                <span class="discount_Quantifier">-15%</span>
+                            </div>
+                        </div>
+                        <div class="zoom_Button_Container">
+                            <button class="zoom_Button generic_Button">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="listed_Item">
+                <div class="Item_Thumbnail_Container">
+                    <button class="thumbnail_Navigation_Button_Left tnb">
+                        <img src="images/EpArrowLeftBold.svg" alt="">
+                    </button>
+                    <img src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8xOTM5NDA1XzRmY2QxOThjZWU5ZmIzYjE5ZGIyOGQzMTY1NGNiOTdjLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=3f37b07e6d40a013162969b609c1e21b3427c5b887a418b6295eac37da4148fd" alt="" class="listing_Preview">
+                    <button class="thumbnail_Navigation_Button_Right tnb">
+                        <img src="images/EpArrowRightBold.svg" alt="">
+                    </button>
+                </div>
+                <div class="listing_Description">
+                    <h2 class="item_Title">dumdum</h2>
+                    <div class="item_Sub_Description">
+                        <div class="item_Details">
+                            <p class="material_Type">oil and canvas</p>
+                            <p class="item_Dimension">20x25in</p>
+                            <div class="pricing">
+                                <span class="current_Price">$39999</span>
+                                <span class="original_Price">$999999</span>
+                                <span class="discount_Quantifier">-15%</span>
+                            </div>
+                        </div>
+                        <div class="zoom_Button_Container">
+                            <button class="zoom_Button generic_Button">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="listed_Item">
+                <div class="Item_Thumbnail_Container">
+                    <button class="thumbnail_Navigation_Button_Left tnb">
+                        <img src="images/EpArrowLeftBold.svg" alt="">
+                    </button>
+                    <img src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8xOTM5NDA1XzRmY2QxOThjZWU5ZmIzYjE5ZGIyOGQzMTY1NGNiOTdjLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=3f37b07e6d40a013162969b609c1e21b3427c5b887a418b6295eac37da4148fd" alt="" class="listing_Preview">
+                    <button class="thumbnail_Navigation_Button_Right tnb">
+                        <img src="images/EpArrowRightBold.svg" alt="">
+                    </button>
+                </div>
+                <div class="listing_Description">
+                    <h2 class="item_Title">dumdum</h2>
+                    <div class="item_Sub_Description">
+                        <div class="item_Details">
+                            <p class="material_Type">oil and canvas</p>
+                            <p class="item_Dimension">20x25in</p>
+                            <div class="pricing">
+                                <span class="current_Price">$39999</span>
+                                <span class="original_Price">$999999</span>
+                                <span class="discount_Quantifier">-15%</span>
+                            </div>
+                        </div>
+                        <div class="zoom_Button_Container">
+                            <button class="zoom_Button generic_Button">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="listed_Item">
+                <div class="Item_Thumbnail_Container">
+                    <button class="thumbnail_Navigation_Button_Left tnb">
+                        <img src="images/EpArrowLeftBold.svg" alt="">
+                    </button>
+                    <img src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzUxXzg0NzQ1M2NiN2Q2ODZmNWRjM2U2YTVmNTI1YmZlMWRhLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE1MDAsImhlaWdodCI6MTUwMCwiZml0IjoiaW5zaWRlIiwiYmFja2dyb3VuZCI6bnVsbH0sInRvRm9ybWF0IjoianBlZyJ9fQ==?signature=2e492d8209f6b9fcacbad24e2bc854c961870950f60d5c70f038cba04304cd1b" alt="" class="listing_Preview">
+                    <button class="thumbnail_Navigation_Button_Right tnb">
+                        <img src="images/EpArrowRightBold.svg" alt="">
+                    </button>
+                </div>
+                <div class="listing_Description">
+                    <h2 class="item_Title">dumdum</h2>
+                    <p class="material_Type">oil and canvas</p>
+                    <p class="item_Dimension">20x25in</p>
+                    <div class="pricing">
+                        <span class="current_Price">$39999</span>
+                        <span class="original_Price">$999999</span>
+                        <span class="discount_Quantifier"></span>
+                    </div>
+                </div>
+            </article> -->
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_Div">
+            <!-- <img src="Images/theSpace/logo-mtavari-eng(2).png"
+                 alt="Company Logo" class="footer_Logo" width="50"> -->
+                 
+            <div class="footer_Column">
+                <h3>Sponsor</h3>
+                ლალი ლომთაძის ხელოვნების წარმოჩენის, პოპულარიზაციისა და შემოქმედებითი მემკვიდრეობის მხარდაჭერია, ქართველი ბიზნესმენი, კომპანია ორკინი საქართველოს დაფუძნებელი ვლადიმერ საყვარელიძე.
+            </div>
+            <div class="footer_Column">
+                <h3>Contact</h3>
+                <address>
+                    <div class="description_Footer"><div class="footer_Icon_One" aria-hidden="true"></div> Tbilisi, Takaishvili st. 3</div>
+                    <div class="description_Footer"><div class="footer_Icon_Two" aria-hidden="true"></div> Phone: <span><a href="tel:+995599203120">+995 599 203 120</a></span></div>
+                    <div class="description_Footer"><div class="footer_Icon_Three" aria-hidden="true"></div> Email: <span><a href="mailto:thespace@thespacerenovations.com">thespace@thespacerenovations.com</a></span></div>
+                </address>
+            </div>
+            <div class="footer_Column">
+                <h3>Links</h3>
+                <ul>
+                    <li class="footer_av_Link"><a href="index.html">Home</a></li>
+                    <li class="footer_av_Link"><a href="about.html">About</a></li>
+                    <li class="footer_av_Link"><a href="gallery.html">Gallery</a></li>
+                    <li class="footer_av_Link"><a href="exhibition.html">Exhibitions</a></li>
+                    <li class="footer_av_Link"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_Column">
+                <h3>Social Media</h3>
+                <ul>
+                    <li class="social_Link"><div class="footer_Social_Icon" id="soc_One" aria-hidden="true"></div><a href="">LinkedIn</a></li>
+                    <li class="social_Link"><div class="footer_Social_Icon" id="soc_Two" aria-hidden="true"></div><a href="">Facebook</a></li>
+                    <li class="social_Link"><div class="footer_Social_Icon" id="soc_Three" aria-hidden="true"></div><a href="">Instagram</a></li>
+                    <li class="social_Link"><div class="footer_Social_Icon" id="soc_Four" aria-hidden="true"></div><a href="">Tiktok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer_Div_Lower">
+            <p class="copyright">© Copyright Lali Lomtadze 2026, All Rights Reserved</p>
+            <p class="author">Website made by Tsotne Mtchedlishvili</p>
+        </div>
+    </footer>
+
+    <script src="js/populateListings.js"></script>
+    <script src="js/nav.js"></script>
+    
+</body>
+</html>

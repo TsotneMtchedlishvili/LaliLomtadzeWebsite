@@ -1,0 +1,426 @@
+body {
+
+    background-color: rgb(43, 44, 54);
+}
+
+.item_Article {
+
+    display: flex;
+    justify-content: center;
+
+    padding-block: calc(1vw + 2*var(--section-separator-unit));
+    padding-inline: 0.8vw;
+    gap: 0.8vw;
+
+    width: 98vw;
+
+    margin-inline: auto;
+}
+
+.display_Container {
+
+    display: flex;
+    gap: 0.8vw;
+    height: 25vw;
+}
+
+.image_Selection_Container {
+
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.image_Selection_Panel {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    height: 100%;
+    max-height: 100%;
+    overflow: scroll;
+
+}
+
+.image_Selection_Container::before {
+
+    content: "";
+    height: 10%;
+    width: 100%;
+    background-image: linear-gradient(0deg, transparent, 60%, rgb(43, 44, 54));
+    position: absolute;
+    top: 0;
+
+}
+
+.image_Selection_Container::after {
+
+    content: "";
+    height: 10%;
+    width: 100%;
+    background-image: linear-gradient(180deg, transparent, 60%, rgb(43, 44, 54));
+    position: absolute;
+    bottom: 0;
+
+}
+
+.image_Select {
+
+    height: 5vw;
+    width: 5vw;
+    object-fit: contain;
+    padding: 5%;
+    background-color: rgba(23, 24, 32, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid white;
+}
+
+.image_Select:hover {
+
+    border-color: rgb(241, 150, 150);
+    cursor: pointer;
+}
+
+.item_Image {
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.image_Sizer {
+
+    width: 45vw;
+    height: 25vw;
+    background-color: black;
+    padding: 1%;
+}
+
+.product_Image {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Listing Text Half */
+
+.listing_Text_Half {
+
+    display: flex;
+    gap: 0.8vw;
+    color: white;
+}
+
+.item_Page_Description {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+}
+
+.item_Page_Title {
+    color: white;
+
+}
+
+.separator_Line_Exibition {
+
+    width: 100%;
+    height: clamp(2px, 0.01vw, 4px);
+    background-color: white;
+    margin-inline: auto;
+}
+
+.item_Tag {
+    padding-inline: clamp(15px, 1vw + 0.25rem, 40px);
+    padding-block: clamp(7px, 0.2vw, 21px);
+    font-size: inherit;
+    background-color: rgba(255, 255, 255, 0.075);
+    border: none;
+    color: white;
+    border: solid 1px white;
+    border-radius: 100vw;
+    transition: all 150ms ease-out;
+
+}
+
+.tag_Scroller {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.item_Details_List {
+
+    list-style: none;
+    line-height: 200%;
+
+}
+
+.item_detail p {
+    font-weight: bold;
+
+}
+
+.item_detail span {
+    font-weight: normal;
+
+}
+
+
+
+/* item page checkout */
+
+.item_Page_Checkout {
+
+    min-width: 15vw;
+    height: 90%;
+    background-color: rgba(23, 24, 32, 0.95);
+
+    padding: 5% 0.8vw;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 0.8vw;
+}
+
+.item_Price {
+
+    font-size: var(--fs-body-lg);
+}
+
+.checkout_Button {
+
+    padding-inline: clamp(35px, 2vw + 0.35rem, 150px);
+    padding-block: clamp(10px, 0.5vw, 40px);
+    font-size: inherit;
+    background-color: rgb(241, 150, 150);
+    border: none;
+    color: rgba(23, 24, 32, 0.95);
+    border: solid 1px rgba(23, 24, 32, 0.95);
+    border-radius: calc(clamp(35px, 2vw + 0.35rem, 150px)/10);
+    transition: all 150ms ease-out;
+    font-weight: bold;
+}
+
+.checkout_Button:hover {
+
+
+    color: rgba(255, 0, 0, 0);
+    /* border: solid 1px rgba(255, 0, 0, 0); */
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+/* item script css */
+
+/* Image Sizer Positioning */
+.image_Sizer {
+    position: relative;
+    width: 45vw;
+    height: 25vw;
+    background-color: black;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_Sizer .tnb {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background-color: white;
+    color: rgb(23, 24, 32);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.image_Sizer:hover .tnb {
+    opacity: 1;
+}
+
+.tnb:hover {
+    background-color: rgb(241, 150, 150);
+    color: white;
+}
+
+.thumbnail_Navigation_Button_Left {
+    left: 1vw;
+}
+
+.thumbnail_Navigation_Button_Right {
+    right: 1vw;
+}
+
+/* Active Thumbnail Highlight */
+.image_Select.active_Thumb {
+    border-color: rgb(241, 150, 150) !important;
+}
+
+/* Lightbox Modal Prompt */
+.gallery_Modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(23, 24, 32, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.modal_Content_Wrapper {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal_Expanded_Img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.close_Preview_Button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.close_Preview_Button:hover {
+    color: rgb(241, 150, 150);
+}
+
+.modal_Thumbnails_Bar {
+    display: flex;
+    gap: 0.8vw;
+    margin-top: 2vh;
+    overflow-x: auto;
+    max-width: 80vw;
+    padding: 0.5vw;
+}
+
+.modal_Image_Select {
+    height: 64px;
+    width: 64px;
+    background-color: rgba(23, 24, 32, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 6px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color 150ms ease-in-out;
+}
+
+.modal_Image_Select:hover,
+.modal_Image_Select.active_Thumb {
+    border-color: rgb(241, 150, 150);
+}
+
+.modal_Item_Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Prompt Nav Btns */
+.gallery_Modal .tnb {
+    opacity: 1 !important;
+    padding: 16px 20px;
+    font-size: 22px; 
+    border-radius: 8px;
+}
+
+/* Modal Content Frame & Arrows*/
+.modal_Content_Wrapper {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal_Expanded_Img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.gallery_Modal .tnb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1 !important;
+    padding: 16px 20px;
+    font-size: 22px;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.gallery_Modal .thumbnail_Navigation_Button_Left {
+    left: 1.5vw;
+}
+
+.gallery_Modal .thumbnail_Navigation_Button_Right {
+    right: 1.5vw;
+}
+
+.close_Preview_Button {
+    width: clamp(18px, 2.5vw, 36px);
+    height: clamp(18px, 2.5vw, 36px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    margin: clamp(5px, 0.25vw, 9px);
+    z-index: 10000;
+}
+
+.close_Preview_Button:hover {
+    cursor: pointer;
+}
+
+.close_Preview_Button:hover .close_Button_Image {
+    transform: rotateZ(360deg);
+}
+
+.close_Button_Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotateZ(0deg);
+    transition: all 200ms ease-in-out;
+}
+

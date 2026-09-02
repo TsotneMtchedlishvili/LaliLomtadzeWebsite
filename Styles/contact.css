@@ -1,0 +1,76 @@
+body {
+
+    background-color: rgb(43, 44, 54);
+    color: white;
+}
+
+main {
+
+    min-height: 100vh;
+    padding-block: calc(var(--section-separator-unit)*2);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main_Centerer {
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, 5vw, 56px);
+    padding-inline: clamp(6px, 4vw, 38px);
+}
+
+.form_Group {
+
+    display:flex;
+    flex-direction: column;
+    gap: clamp(6px, 1vw, 10px);
+}
+
+.form_Group input {
+
+    width: 100%;
+    padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: white;
+    font-family: var(--font);
+    font-size: clamp(14px, 1.3vw, 16px);
+    /* color: white; */
+    transition: border-color 0.2s;
+}
+
+
+.contact_Form {
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 32px)
+}
+
+#subject {
+
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: white;
+    font-size: 1rem;
+}
+
+#message_Input {
+    width: 100%;
+    padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: white;
+    font-size: clamp(14px, 1.3vw, 16px);
+    /* color: var(--text); */
+    transition: border-color 0.2s;
+}
+
+.contact_Additional_Link {
+    font-weight: bold;
+    color: rgb(253, 175, 175);
+}

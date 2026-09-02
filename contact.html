@@ -20,14 +20,12 @@
     <link rel="alternate" hreflang="x-default" href="">
 
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/contact.css">
     <link rel="stylesheet" href="Styles/nav.css">
     <link rel="stylesheet" href="Styles/UI.css">
-    <link rel="stylesheet" href="Styles/gradient.css">
-    <link rel="stylesheet" href="Styles/home.css">
     <link rel="stylesheet" href="Styles/footer.css">
-    <link rel="stylesheet" href="Styles/gallery.css">
 
-    <title>Art Main Page</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
@@ -74,35 +72,57 @@
 
     <main>
 
-        <section class="hero-split">
-            <div class="hero-content">
-                <h1>Lali Title PLaceholder Text</h1>
-                <p>Exploring raw materiality and expansive spatial dynamics through large-scale installations and mixed media series.</p>
-                <a href="about.html" class="generic_Button">Read Artist Statement</a>
+        <div class="main_Centerer">
+            <div class="contact_Header">
+                <h1 class="contact_Title">
+                    Get in Touch
+                </h1>
+                <p>
+                    For aquisitions, inquiries, studio visits, or commission requests, please fill out the form below.
+                </p>
             </div>
-            <div class="hero-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-3eyiRvdi0U?si=hUr3q0bg7yE_YjlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
 
-        <section class="exhibition-spotlight">
-            <div class="exhibition-info">
-                <span>Current Exhibition</span>
-                <h3>Monoliths & Memory - Solo Show at City Gallery</h3>
-            </div>
-            <a href="exhibition.html" class="generic_Button">View Exhibition Details</a>
-        </section>
+            <form class="contact_Form" action="https://api.web3forms.com/submit" method="post">
 
-        <section class="featured-section">
-            <div class="section-header">
-                <h2>Featured Artworks</h2>
-                <a href="gallery.html">View All Works &rarr;</a>
-            </div>
-            <div class="gallery-grid">
-                
-            </div>
-        </section>
+                <div class="form_Group">
+                    <label for="name_Input">
+                        Name
+                    </label>
+                    <input id="name_Input" type="text" name="name" required placeholder="Your Name">
+                </div>
 
+                <div class="form_Group">
+                    <label for="email_Input">
+                        Email
+                    </label>
+                    <input id="email_Input" type="email" name="email" required placeholder="youremail@example.com">
+                </div>
+
+                <div class="form_Group">
+                    <label for="subject">
+                        Inquiry Tyoe
+                    </label>
+                    <select id="subject" name="subject" required placeholder="youremail@example.com">
+                        <option value disabled selected>Select an option...</option>
+                        <option value="Purchase">Acquisition / Purchasing Art</option>
+                        <option value="Commission">Commission Request</option>
+                        <option value="Exhibition">Exhibition / Press</option>
+                        <option value="Exhibition">Other</option>
+                    </select>
+                </div>
+
+                <div class="form_Group">
+                    <label for="message_Input">
+                        Inquiry Tyoe
+                    </label>
+                    <textarea id="message_Input" name="message" rows="6" required placeholder="Tell us about your inquiry"></textarea>
+                </div>
+
+                <button class="generic_Button" type="submit">Send Message</button>
+
+            </form>
+            <p>Prefer direct email? Reach out at <a class="contact_Additional_Link" href="mailto:youremail@asdawdasdawdasdawdasdadadadaaaa.com">youremail@example.com</a></p>
+        </div>
     </main>
 
     <footer>
@@ -148,7 +168,7 @@
             <p class="author">Website made by Tsotne Mtchedlishvili</p>
         </div>
     </footer>
+
 </body>
 <script src="js/nav.js"></script>
-<script src="js/featuredGalleryList.js"></script>
 </html>

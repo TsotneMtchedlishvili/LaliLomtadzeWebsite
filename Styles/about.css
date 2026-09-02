@@ -1,0 +1,407 @@
+section {
+
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-color: #272833;
+    height: 100vh;
+
+    color: white;
+    position: relative;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    
+}
+
+html {
+
+    scroll-behavior: smooth;
+    transition: all 2000ms ease-in-out;
+}
+
+.arrow_Centerer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jump_To_Arrow {
+
+    opacity: 0;
+    visibility: hidden;
+    width: 5vw;
+    height: 5vw;
+    transform: translateY(-50%);
+    transition: all 350ms ease;
+}
+
+.jump_To_Arrow_Displayed {
+
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(0);
+}
+
+.downArrow {
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+    
+}
+
+.content_Window {
+
+    background-image: linear-gradient(rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95));
+
+}
+
+.landing_Banner_About {
+
+    background-size: cover;
+    background-image: url(http://www.bigsale.ge/lalilomtadze/lalilomtadze_photo1.jpg);
+    z-index: 5;
+}
+
+.about_Banner_Content {
+
+   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-blend-mode: overlay; */
+}
+
+.banner_Content_Centerer {
+
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    /* height: clamp(300px, 30vh, 750px); */
+    min-height: max-content;
+    height: 100vh;
+
+}
+
+
+.banner_Text_Container {
+
+    
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 0.5vw, 20px);
+    line-height: 200%;
+}
+
+.about_Primary_Heading {
+
+    font-size: var(--fs-heading-md);
+
+
+}
+
+.about_Biography_Description {
+
+    width: 98%;
+
+
+}
+
+
+.banner_Portrait_Container {
+
+    /* border-radius: 100vw; */
+    width: clamp(250px, 15vw, 500px);;
+    height: clamp(250px, 15vw, 500px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* box-shadow: -23px -10px 13px rgba(129, 158, 211, 0.336), 23px 10px 13px rgba(228, 171, 171, 0.308); */
+    
+
+}
+
+.about_Banner_Portrait {
+
+float: center;
+}
+
+.about_Section_2 {
+
+    background-size: 120%;
+    background-image: url(https://chairish-prod.freetls.fastly.net/image/product/sized/dc9aaa8b-7461-4d63-847d-93b77464feb2/lali-lomtadze-mixed-media-plant-still-life-2956?aspect=fit&width=1800&height=1800);
+    display: flex;
+    align-items: end;
+    
+    z-index: 4;
+}
+
+.section2_Container {
+
+    height: 50vh;
+}
+
+
+.about_Section_3 {
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5wnqmchr6P_9ZdV0jAe7a1R5ADKM6NwK6n1Fxu6juFuX3mWLhCHPM9Ir-&s=10);
+    display: flex;
+    justify-content: right;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.section3_Container {
+
+    width: 30vw;
+    height: 100%;
+    opacity: 0;
+    visibility: 0;
+    
+}
+
+.section_Slide_Left {
+
+    opacity: 1;
+    visibility: 1;
+    animation: 400ms forwards ease-in-out slide-in-left;
+}
+
+.about_Section_4 {
+
+    background-image: url(https://art.gov.ge/wp-content/uploads/2022/10/IMG_6234-786x1024.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: left;
+    z-index: 2;
+    overflow: hidden;
+    
+}
+
+.section4_Container {
+
+    width: 30vw;
+    height: 100%;
+    opacity: 0;
+    visibility: 0;
+    
+}
+
+.section_Slide_Right {
+
+    opacity: 1;
+    visibility: 1;
+    animation: 400ms forwards ease-in-out slide-in-right;
+}
+
+
+
+.section_Panel {
+
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 200%;
+    transition: all 200ms ease-in-out;
+    
+    
+}
+
+.about_Section_3 .arrow_Centerer, .about_Section_4 .arrow_Centerer {
+
+    z-index: -1;
+}
+
+/* .about_Section_5 {
+
+
+} */
+
+.section5_Container {
+
+    height: 100%;
+    padding: var(--section-separator-unit);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content_Window_One, .content_Window_Two {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    justify-content: start;
+}
+
+.content_Window_One {
+
+    background-image: url(../images/about/360_F_194708750_os7GskmU0EiyecPHPyfEqUKg4hMXo7dS.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.section5_Description {
+
+    width: 70%;
+    line-height: 200%;
+}
+
+.exponat {
+
+    border: solid 5px #272833;
+    position: absolute;
+    top: 30%;
+    height: 20%;
+    opacity: 0%;
+}
+
+.exponat_Animation {
+
+    animation: slide-down 700ms ease-in-out;
+    opacity: 100%;
+}
+
+#exponat_1 {
+
+    left: 14%;
+    top: 25%;
+
+}
+
+#exponat_3 {
+
+    right: 17%;
+    top: 35%;
+
+}
+
+
+
+.about_Section_6 {
+
+    background-color: rgb(184, 89, 89);
+    height: 80vh;
+}
+
+.section6_Container {
+
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 20vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vw;
+    height: 100%;
+}
+
+.form_Group {
+
+    display:flex;
+    flex-direction: column;
+    gap: clamp(6px, 1vw, 10px);
+    width: 50%
+}
+
+.form_Group input {
+
+    /* width: 100%; */
+    padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: white;
+    font-family: var(--font);
+    font-size: clamp(14px, 1.3vw, 16px);
+    /* color: white; */
+    transition: border-color 0.2s;
+}
+
+.sign_Up_Part {
+
+    display: flex;
+    gap: 0.8vw;
+    justify-content: center;
+    align-items: last baseline;
+    width: 80%;
+}
+
+.section6_Container .generic_Button {
+
+    padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide-down {
+  from {
+    translate: 0 -200%;
+    opacity: 0%;
+    /* scale: 200% 1; */
+    /* position: absolute; */
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 100%;
+    /* scale: 100% 1; */
+    /* position: relative; */
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    translate: -50%;
+    /* scale: 200% 1; */
+    position: absolute;
+  }
+
+  to {
+    translate: 0;
+    /* scale: 100% 1; */
+    position: relative;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    translate: 50%;
+    /* scale: 200% 1; */
+    position: absolute;
+  }
+
+  to {
+    translate: 0;
+    /* scale: 100% 1; */
+    position: relative;
+  }
+}

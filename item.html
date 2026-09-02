@@ -20,16 +20,16 @@
     <link rel="alternate" hreflang="x-default" href="">
 
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/item.css">
     <link rel="stylesheet" href="Styles/nav.css">
     <link rel="stylesheet" href="Styles/UI.css">
-    <link rel="stylesheet" href="Styles/gradient.css">
-    <link rel="stylesheet" href="Styles/home.css">
     <link rel="stylesheet" href="Styles/footer.css">
-    <link rel="stylesheet" href="Styles/gallery.css">
+    
 
-    <title>Art Main Page</title>
+    <title>Listing</title>
 </head>
 <body>
+
     <header>
         <div class="top_Panel ">
 
@@ -74,34 +74,102 @@
 
     <main>
 
-        <section class="hero-split">
-            <div class="hero-content">
-                <h1>Lali Title PLaceholder Text</h1>
-                <p>Exploring raw materiality and expansive spatial dynamics through large-scale installations and mixed media series.</p>
-                <a href="about.html" class="generic_Button">Read Artist Statement</a>
-            </div>
-            <div class="hero-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-3eyiRvdi0U?si=hUr3q0bg7yE_YjlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
+        <div class="item_Article">
+            <div class="listing_Image_Half">
+                <div class="display_Container">
+                    <div class="image_Selection_Container">
+                        <div class="image_Selection_Panel">
+                            <!-- <div class="image_Select">
+                                <img src="images/gallery/!Unsorted/20260814_111601107_iOS.jpg" alt="" class="item_Image">
+                            </div>
 
-        <section class="exhibition-spotlight">
-            <div class="exhibition-info">
-                <span>Current Exhibition</span>
-                <h3>Monoliths & Memory - Solo Show at City Gallery</h3>
-            </div>
-            <a href="exhibition.html" class="generic_Button">View Exhibition Details</a>
-        </section>
+                            <div class="image_Select">
+                                <img src="images/gallery/!Unsorted/20260814_111735726_iOS.jpg" alt="" class="item_Image">
+                            </div>
 
-        <section class="featured-section">
-            <div class="section-header">
-                <h2>Featured Artworks</h2>
-                <a href="gallery.html">View All Works &rarr;</a>
+                            <div class="image_Select">
+                                <img src="images/gallery/!Unsorted/20260814_114011727_iOS.jpg" alt="" class="item_Image">
+                            </div>
+
+                            <div class="image_Select">
+                                <img src="images/gallery/!Unsorted/20260814_111601107_iOS.jpg" alt="" class="item_Image">
+                            </div>
+
+                            <div class="image_Select">
+                                <img src="images/gallery/!Unsorted/20260814_111601107_iOS.jpg" alt="" class="item_Image">
+                            </div>
+
+                            <div class="image_Select">
+                                <img src="images/gallery/!Unsorted/20260814_111601107_iOS.jpg" alt="" class="item_Image">
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="image_Sizer">
+                        <button class="thumbnail_Navigation_Button_Left tnb">
+                        <img src="images/EpArrowLeftBold.svg" alt="">
+                    </button>
+                        <img src="images/gallery/!Unsorted/20260814_111601107_iOS.jpg" alt="" class="product_Image">
+                    <button class="thumbnail_Navigation_Button_Right tnb">
+                        <img src="images/EpArrowRightBold.svg" alt="">
+                    </button>
+                    </div>
+                    
+                </div>
+
             </div>
-            <div class="gallery-grid">
+            <div class="listing_Text_Half">
+
+                <div class="item_Page_Description">
+                    <h1 class="item_Page_Title" id="the_Item_Title">
+                        Item Listing
+                    </h1>
+                    <div class="separator_Line_Exibition" aria-hidden="true"></div>
+                    <div class="tag_Scroller">
+                        <!-- <div class="item_Tag">
+                            adawdw
+                        </div>
+
+                        <div class="item_Tag">
+                            adawdw
+                        </div>
+
+                        <div class="item_Tag">
+                            adawdw
+                        </div> -->
+                    </div>
+
+                    <ul class="item_Details_List">
+                        <li class="item_detail">
+                            <p>Material: <span id="#material_Spec"></span></p>
+                        </li>
+
+                        <li class="item_detail">
+                            <p>Dimensions: <span id="#dimension_Spec"></span></p>
+                        </li>
+                    </ul>
+
+                    <div class="item_Description_Text">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </div>
+
+
+                </div>
+
+                <div class="item_Page_Checkout">
+                    <div class="item_Price" id="the_Item_Price">
+                        2000$
+                    </div>
+                    <div class="item_Availability">
+                        Available
+                    </div> 
+                    <button class="checkout_Button">
+                        Action
+                    </button>               
+                </div>
                 
             </div>
-        </section>
+        </div>
+
 
     </main>
 
@@ -148,7 +216,9 @@
             <p class="author">Website made by Tsotne Mtchedlishvili</p>
         </div>
     </footer>
+    
 </body>
 <script src="js/nav.js"></script>
-<script src="js/featuredGalleryList.js"></script>
+<!-- <script src="js/listingScript.js"></script> -->
+<script src="js/theListingPageFiller.js"></script>
 </html>
