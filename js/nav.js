@@ -8,6 +8,7 @@ const navLinks = Array.from(document.querySelectorAll('.nav_Link'));
 const navBg = document.querySelector('.top_Panel_Before');
 const logoAndBtn = document.querySelector('.logo_And_Btn');
 let temporaryList;
+let sentinelInvisible;
 
 const navListMaker = () => {
 
@@ -144,20 +145,75 @@ const changeNav = (scrolledDown) => {
         navBg.style.transition = "all 800ms ease-in-out";
         topPanel.classList.remove("show_Dropdown")
         navElementContainer.classList.remove("nav_Dropdown")
+        topPanel.style.width = `max-content`;
 
     }
 }
 
 const callback = (entries, observer) => {
-  entries.forEach((entry) => {
+    if(window.innerWidth >= 1000) {
+        entries.forEach((entry) => {
 
-    changeNav(!entry.isIntersecting);
+        changeNav(!entry.isIntersecting);
+        sentinelInvisible = !entry.isIntersecting;
 
-  });
+    });
+    }
 };
+
+// window.addEventListener('', () => {
+     if(window.innerWidth < 1000) {
+
+        
+        navBg.style.transition = "all 0ms ease-in-out";
+        const currentWidth = topPanel.getBoundingClientRect().width;
+        // topPanel.style.width = `${currentWidth}px`
+        topPanel.style.width = `98vw`
+        topPanel.classList.add("show_Dropdown")
+        
+    }
+    
+// });
+
+window.addEventListener("resize", () => {
+
+    if(window.innerWidth < 1000) {
+
+        
+        navBg.style.transition = "all 400ms ease-in-out";
+        const currentWidth = topPanel.getBoundingClientRect().width;
+        topPanel.style.width = `98vw`
+        topPanel.classList.add("show_Dropdown")
+        
+    }
+    else {
+
+        if(document.querySelector('.temporary_Ul')) {
+            navElementContainer.style.transition = "unset"
+            const temporaryUl = document.querySelector('.temporary_Ul');
+            closeNav()
+            deleteList(temporaryUl)
+        }
+
+        // navBg.style.transition = "all 800ms ease-in-out";
+        topPanel.classList.remove("show_Dropdown")
+        navElementContainer.classList.remove("nav_Dropdown")
+        topPanel.style.width = `max-content`;
+        
+        // console.log(currentWidth)
+
+        if(sentinelInvisible){
+            navBg.style.transition = "all 400ms ease-in-out";
+            topPanel.style.width = window.getComputedStyle(topPanel).width;
+            topPanel.classList.add("show_Dropdown")
+        }
+
+    }
+})
 
 const observer = new IntersectionObserver(callback, options);
 
 
 
 observer.observe(sentinel);
+

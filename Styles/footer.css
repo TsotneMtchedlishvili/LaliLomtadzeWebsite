@@ -1,6 +1,7 @@
 footer {
     background-color: rgb(43, 44, 54);
     overflow: wrap;
+    color: var(--footer-Text);
   }
 
   footer a {
@@ -20,10 +21,12 @@ footer {
     
   }
 
-  footer h4 {
+  footer h3 {
 
-    color: var(--footer-headers);
+    color: var(--footer-Text);
     font-weight: 900 ;
+    margin-bottom: clamp(10px, 0.5vw, 20px);
+    width: max-content;
   }
 
   .footer_Div {
@@ -50,11 +53,12 @@ footer {
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    justify-content: center;
     /* text-align: center; */
   }
 
-  .footer_Column h4 {
+  .footer_Column h3 {
 
         text-align: center;
   }
@@ -112,6 +116,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     gap: clamp(5px, 3vw, 20px);
 
@@ -168,7 +173,7 @@ footer {
   }
 
   .footer_Icon_Three {
-    background-image: url(../Images/Icons/mail_30dp_7D7D7D_FILL0_wght400_GRAD0_opsz24.svg);
+    background-image: url(../images/Icons/mail_24dp_08BFFF_FILL0_wght400_GRAD0_opsz24.svg);
   }
 
   .social_Link {
@@ -191,7 +196,7 @@ footer {
 
     display: inline-block;
     content: "";
-    background-image: url(../Images/Icons/socials/linkedin-svgrepo-com.svg);
+    background-image: url(../images/Icons/mail_24dp_08BFFF_FILL0_wght400_GRAD0_opsz24.svg);
   }
   #soc_Two {
 
@@ -203,7 +208,7 @@ footer {
 
     display: inline-block;
     content: "";
-    background-image: url(../Images/Icons/socials/instagram-svgrepo-com.svg);
+    background-image: url(../images/Icons/socials/instagram-svgrepo-com.svg);
   }
   #soc_Four {
 
@@ -273,7 +278,7 @@ footer {
     }
 
 
-    .footer_Column h4 {
+    .footer_Column h3 {
       text-align: unset;
     }
   
@@ -359,9 +364,9 @@ footer {
       background-image: url(../Images/Icons/phone_in_talk_30dp_7D7D7D_FILL0_wght400_GRAD0_opsz24.svg);
     }
   
-    .footer_Icon_Three {
+    /* .footer_Icon_Three {
       background-image: url(../Images/Icons/mail_30dp_7D7D7D_FILL0_wght400_GRAD0_opsz24.svg);
-    }
+    } */
   
     .social_Link {
   
@@ -383,26 +388,25 @@ footer {
   
       display: inline-block;
       content: "";
-      background-image: url(../Images/Icons/socials/linkedin-svgrepo-com.svg);
+      /* background-image: url(../Images/Icons/socials/linkedin-svgrepo-com.svg); */
     }
     #soc_Two {
   
       display: inline-block;
       content: "";
-      background-image: url(../Images/Icons/socials/facebook-color-svgrepo-com.svg);
+      /* background-image: url(../Images/Icons/socials/facebook-color-svgrepo-com.svg); */
     }
     #soc_Three {
   
       display: inline-block;
       content: "";
-      background-image: url(../Images/Icons/socials/instagram-svgrepo-com.svg);
+      /* background-image: url(../Images/Icons/socials/instagram-svgrepo-com.svg); */
     }
     #soc_Four {
   
       display: inline-block;
       content: "";
-      background-image: url(../Images/Icons/socials/tiktok-svgrepo-com\(1\).svg);
-      /* background-color: #003f58; */
+      /* background-image: url(../Images/Icons/socials/tiktok-svgrepo-com\(1\).svg); */
     }
   
     .tos {

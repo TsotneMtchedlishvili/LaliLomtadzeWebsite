@@ -7,7 +7,7 @@
 
         font-family: Arial, Helvetica, sans-serif;
 
-        --text-color: #2f2a26;
+        --text-color: white;
 
         --text-color-alt: #5c534c;
 
@@ -32,11 +32,11 @@
         --font-size-title-two: clamp(0.2rem, 2vw + 0.6rem, 2rem);
         --font-size-title-three: clamp(0.2rem, 0.8vw + 0.4rem, 2rem);
 
-        --primary-color: rgba(23, 24, 32, 0.95);
+        --primary-color: rgb(43, 44, 54);
 
-        --primary-darker: #bfb6a8;
+        --primary-darker: rgba(23, 24, 32, 0.95);
 
-        --secondary-color: #8a8176;
+        --secondary-color: white;
 
         --tertiary-color: #f4f1ec;
 
@@ -94,9 +94,9 @@
         /* DO NOT DELETE BELOW THIS */
 
 
-        --footer-Text: #7a7268;
+        --footer-Text: white;
 
-        --footer-headers: #4e463f;
+        --footer-headers: white;
 
         /* Font Sizes */
 

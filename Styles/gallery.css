@@ -1,5 +1,4 @@
 
-
 h2 {
 
     font-size: var( --fs-body-xl);
@@ -319,6 +318,56 @@ h2 {
 .nav_Disable {
 
     display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .hero_Landing {
+
+        min-height: unset;
+    }
+
+    .listings_Grid {
+        padding: 5vw;
+        gap: 5vw;
+        grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 22vw, 280px), 1fr));
+    }
+
+    .tags_Container {
+
+        display: none;
+    }
+
+    .tags_Container.prompt_Out {
+
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+
+        background-color: rgb(43, 44, 54);
+        padding: 10vw;
+        width: max-content;
+
+        border: solid 2px white;
+        border-radius: 2vw;
+
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .gallery_Tag {
+        width: 100%;
+        
+    }
+
+    .category_Button {
+
+        width: max-content;
+        margin-inline: auto;
+    }
 }
 
 @keyframes slide-down {

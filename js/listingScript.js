@@ -28,12 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalImg = document.querySelector('.modal_Expanded_Img');
         if (modalImg) modalImg.src = currentSrc;
 
-        // 3. Sync main thumbnails active state
         thumbnails.forEach((thumb, idx) => {
             thumb.classList.toggle('active_Thumb', idx === currentIndex);
         });
 
-        // 4. Sync modal thumbnails active state
         const modalThumbBar = document.querySelector('.modal_Thumbnails_Bar');
         if (modalThumbBar) {
             modalThumbBar.querySelectorAll('.modal_Image_Select').forEach((t, i) => {
@@ -62,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Create Modal Lightbox Dynamically with your close button markup
     const modal = document.createElement('div');
     modal.className = 'gallery_Modal';
     modal.innerHTML = `
@@ -84,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalLeft = modal.querySelector('.modal_Left');
     const modalRight = modal.querySelector('.modal_Right');
 
-    // Populate modal thumbnails
+    // populating modal thumbnails
     images.forEach((src, idx) => {
         const mThumb = document.createElement('div');
         mThumb.className = 'modal_Image_Select ' + (idx === 0 ? 'active_Thumb' : '');
@@ -101,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden';
     });
 
-    // Close modal handlers
     const closeModal = () => {
         modal.style.display = 'none';
         document.body.style.overflow = '';

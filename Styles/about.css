@@ -301,8 +301,16 @@ float: center;
 
 .about_Section_6 {
 
-    background-color: rgb(184, 89, 89);
+    /* background-color: rgb(184, 89, 89); */
+    background-color: #f7f7f0;
+    color: rgb(43, 44, 54);
     height: 80vh;
+}
+
+#email_Input {
+
+    background-color: rgb(43, 44, 54);
+    color: #f7f7f0;
 }
 
 .section6_Container {
@@ -314,6 +322,16 @@ float: center;
     flex-direction: column;
     gap: 3vw;
     height: 100%;
+}
+
+.section6_Container .generic_Button {
+        border-color: rgb(43, 44, 54);
+        color: rgb(43, 44, 54);
+    }
+
+.section6_Container .generic_Button:hover {
+    border-color: rgb(241, 150, 150);
+    color: rgb(241, 150, 150);
 }
 
 .form_Group {
@@ -330,7 +348,7 @@ float: center;
     padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px);
     border: 1px solid var(--border);
     border-radius: 4px;
-    background: white;
+    /* background: white; */
     font-family: var(--font);
     font-size: clamp(14px, 1.3vw, 16px);
     /* color: white; */
@@ -352,7 +370,167 @@ float: center;
 }
 
 
+@media (max-width: 1000px) {
 
+    .generic_Button {
+        position: relative;
+        z-index: 15;
+    }
+
+    section {
+
+        min-height: max-content;
+        height: unset;
+        display: flex;
+        gap: 5vw;
+    }
+
+    .banner_Content_Centerer {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        height: max-content;
+        padding-bottom: clamp(80px, 20vw, 120px) !important;
+        padding-top: calc(2*var(--section-separator-unit));
+    }
+
+    .banner_Text_Container {
+
+        width: 90vw;
+        max-width: unset;
+    }
+
+    .jump_To_Arrow {
+
+        width: clamp(80px, 20vw, 120px) !important;
+        height: clamp(80px, 20vw, 120px) !important; 
+    }
+
+    .section3_Container, .section4_Container {
+
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        padding-block: clamp(80px, 20vw, 120px);
+        gap: 5vh;
+        /* padding-bottom: clamp(80px, 20vw, 120px) !important; */
+        /* padding-top: calc(2*var(--section-separator-unit)); */
+    }
+
+    .section5_Container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        padding-inline: 5vw;
+        gap: 5vh;
+        padding-block: clamp(80px, 20vw, 120px);
+        /* height: 200vh; */
+    }
+
+    .section6_Container {
+
+        /* display: flex;
+        flex-direction: column-reverse; */
+        padding-inline: 5vw;
+        gap: 5vw;
+    }
+
+    .sign_Up_Part {
+
+        width: 100%;
+        min-height: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form_Group {
+
+        /* padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px); */
+        flex-grow: 1;
+        height: unset;
+    }
+
+    .form_Group input {
+
+        padding: clamp(12px, 1.8vw, 18px) clamp(14px, 2vw, 20px);
+        font-size: inherit;
+    }
+
+    .section6_Container .generic_Button {
+
+        width: 20%;
+        min-width: max-content;
+        text-align: center;
+    }
+
+    .content_Window_One {
+
+        /* width: 100%; */
+        height: 50vh;
+        width: auto;
+    }
+    
+    .section5_Description {
+
+        width: unset;
+    }
+
+    .content_Window_Two {
+
+        width: unset;
+        gap: 5vh;
+    }
+
+    .arrow_Centerer {
+
+        z-index: 2 !important;
+    }
+
+    .section_Slide_Left {
+
+        animation: 400ms forwards ease-in-out slide-in-left-phone;
+    }
+
+    .section_Slide_Right {
+        opacity: 1;
+        visibility: 1;
+        animation: 400ms forwards ease-in-out slide-in-right-phone;
+    }
+
+
+
+
+
+
+    @keyframes slide-in-left-phone {
+        from {
+            translate: 100%;
+            /* scale: 200% 1; */
+            position: absolute;
+        }
+
+        to {
+            translate: 0;
+            /* scale: 100% 1; */
+            position: relative;
+        }
+    }
+
+    @keyframes slide-in-right-phone {
+        from {
+            translate: -100%;
+            /* scale: 200% 1; */
+            position: absolute;
+        }
+
+        to {
+            translate: 0;
+            /* scale: 100% 1; */
+            position: relative;
+        }
+    }
+}
 
 
 

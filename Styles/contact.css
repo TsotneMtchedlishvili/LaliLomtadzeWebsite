@@ -74,3 +74,10 @@ main {
     font-weight: bold;
     color: rgb(253, 175, 175);
 }
+
+@media (max-width: 1000px) {
+
+    .main_Centerer {
+        padding-inline: 5vw;
+    }
+}
