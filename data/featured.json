@@ -1,7 +1,7 @@
 [
-      {
+    {
     "id": 1,
-    "title": "ballerina",
+    "title": "Ballerina",
     "photos": ["../images/gallery/!Unsorted/20260817_175241266_iOS.jpg"],
     "material": "mix.",
     "dimensions": "48-44",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "title": "evening",
+    "title": "Evening",
     "photos": ["../images/gallery/!Unsorted/20260817_175012135_iOS.png"],
     "material": "lithography",
     "dimensions": "48-60.5",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "title": "tree of wishes",
+    "title": "Tree of Wishes",
     "photos": ["../images/gallery/!Unsorted/20260817_174704595_iOS.png"],
     "material": "mix.",
     "dimensions": "49-46",

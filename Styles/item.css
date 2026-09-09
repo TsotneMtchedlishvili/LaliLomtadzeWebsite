@@ -115,6 +115,7 @@ body {
     display: flex;
     gap: 0.8vw;
     color: white;
+    flex-grow: 1;
 }
 
 .item_Page_Description {
@@ -122,6 +123,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8vw;
+    flex-grow: 1;
 }
 
 .item_Page_Title {
@@ -424,3 +426,83 @@ body {
     transition: all 200ms ease-in-out;
 }
 
+@media (max-width: 1000px) {
+
+    main {
+
+        padding-inline: 5vw !important;
+    }
+
+    .item_Article {
+
+        flex-direction: column;
+        width: unset;
+    }
+
+    .display_Container {
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .listing_Text_Half {
+
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .display_Container {
+
+        height: unset;
+    }
+
+    .image_Sizer {
+
+        width: 100%;
+        height: 50vh;
+    }
+
+    .image_Selection_Panel {
+
+        /* min-width: 20vw; */
+        /* width: max-content; */
+        width: max-content;
+        height: max-content;
+        /* height: clamp(80px, 10vh, 160px); */
+        overflow: unset;
+        flex-direction: row;
+        /* overflow-x: scroll; */
+        padding-block: 2.5vw;
+        gap: 2.5vw;
+    }
+
+    .image_Selection_Container::after, .image_Selection_Container::before {
+
+        background: none;
+    }
+
+    .image_Selection_Container {
+
+        /* height: clamp(80px, 10vh, 160px); */
+        min-height: max-content;
+        overflow: unset;
+        overflow-x: scroll;
+        
+    }
+
+    .image_Select {
+
+        width: 20vw;
+        height: 20vw;
+        padding: 1vw;
+    }
+
+    .item_Page_Checkout {
+        padding-inline: 2.5vw;
+        gap: 2.5vw;
+    }
+
+    .item_Page_Description {
+        gap: 2.5vw;
+    }
+}

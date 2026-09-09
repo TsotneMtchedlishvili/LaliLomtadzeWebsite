@@ -2,11 +2,11 @@
 
   {
     "id": 1,
-    "title": "ballerina",
+    "title": "Ballerina",
     "photos": ["../images/gallery/!Unsorted/20260817_175241266_iOS.jpg"],
     "material": "mix.",
     "dimensions": "48-44",
-    "price": "$1000",
+    "price": "",
     "onSale": false,
     "originalPrice": "",
     "discount": "",
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "title": "evening",
+    "title": "Evening",
     "photos": ["../images/gallery/!Unsorted/20260817_175012135_iOS.png"],
     "material": "lithography",
     "dimensions": "48-60.5",
@@ -26,7 +26,7 @@
   },
   {
     "id": 3,
-    "title": "tree of wishes",
+    "title": "Tree of Wishes",
     "photos": ["../images/gallery/!Unsorted/20260817_174704595_iOS.png"],
     "material": "mix.",
     "dimensions": "49-46",
@@ -38,7 +38,7 @@
   },
   {
     "id": 4,
-    "title": "bather",
+    "title": "Bather",
     "photos": ["../images/gallery/!Unsorted/20260817_174336473_iOS.png"],
     "material": "mix.",
     "dimensions": "49-38",
@@ -50,10 +50,10 @@
   },
   {
     "id": 5,
-    "title": "small still life",
-    "photos": ["../images/gallery/!Unsorted/20260817_174155707_iOS.jpg"],
-    "material": "",
-    "dimensions": "31-30",
+    "title": "Guardian Angel",
+    "photos": ["../images/gallery/!Unsorted/image0.jpg"],
+    "material": "mix",
+    "dimensions": "55-50",
     "price": "",
     "onSale": false,
     "originalPrice": "",
@@ -62,7 +62,7 @@
   },
   {
     "id": 6,
-    "title": "still life yellow flowers",
+    "title": "Still Life Yellow Flowers",
     "photos": ["../images/gallery/!Unsorted/20260817_173940005_iOS.jpg"],
     "material": "mix",
     "dimensions": "49-50",
@@ -74,7 +74,7 @@
   },
   {
     "id": 7,
-    "title": "yellow ballerina",
+    "title": "Yellow Ballerina",
     "photos": ["../images/gallery/!Unsorted/20260817_173548096_iOS.jpg"],
     "material": "mix.",
     "dimensions": "50-46",
@@ -86,7 +86,7 @@
   },
   {
     "id": 8,
-    "title": "spring",
+    "title": "Spring",
     "photos": ["../images/gallery/!Unsorted/20260815_073642277_iOS.jpg"],
     "material": "mix.",
     "dimensions": "48-88",
@@ -98,7 +98,7 @@
   },
   {
     "id": 9,
-    "title": "old Tbilisi",
+    "title": "Old Tbilisi",
     "photos": ["../images/gallery/!Unsorted/20260814_114220101_iOS.jpg"],
     "material": "oil canvas",
     "dimensions": "50-87",
@@ -110,7 +110,7 @@
   },
   {
     "id": 10,
-    "title": "dream",
+    "title": "Dream",
     "photos": ["../images/gallery/!Unsorted/20260814_114011727_iOS.jpg"],
     "material": "oil canvas",
     "dimensions": "49-45",
@@ -158,7 +158,7 @@
   },
   {
     "id": 14,
-    "title": "butterfly",
+    "title": "Butterfly",
     "photos": ["../images/gallery/!Unsorted/20260814_113115418_iOS.jpg"],
     "material": "Cold nail",
     "dimensions": "49-55",
@@ -218,7 +218,7 @@
   },
   {
     "id": 19,
-    "title": "big elephant",
+    "title": "Big Elephant",
     "photos": ["../images/gallery/!Unsorted/20260814_111601107_iOS.jpg"],
     "material": "Mix.",
     "dimensions": "40,5-54",
@@ -239,77 +239,6 @@
     "originalPrice": "",
     "discount": "",
     "tags": []
-  },
-
-  {
-    "id": 21,
-    "title": "dumdum",
-    "photos": ["../images/gallery/ID1/id1_1.jpeg", "../images/gallery/ID1/id1_2.jpeg", "../images/gallery/ID1/id1_3.jpeg"],
-    "material": "oil and canvas",
-    "dimensions": "20x25in",
-    "price": "$39,999",
-    "onSale": false,
-    "originalPrice": "$999,999",
-    "discount": "-15%",
-    "tags": [ "Unavailable"]
-  },
-  {
-    "id": 22,
-    "title": "Untitled Composition",
-    "photos": ["https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01"],
-    "material": "acrylic on wood",
-    "dimensions": "16x20in",
-    "price": "$12,500",
-    "onSale": false,
-    "tags": ["WIP", "New", "Unavailable"]
-  },
-  {
-    "id": 23,
-    "title": "dumdum",
-    "photos": ["../images/gallery/ID2/on_Brige1.jpeg", "../images/gallery/ID2/on_Brige2.jpeg", "../images/gallery/ID2/on_Brige3.jpeg", "../images/gallery/ID2/on_Brige4.jpeg", "../images/gallery/ID2/on_Brige5.jpeg"],
-    "material": "oil and canvas",
-    "dimensions": "20x25in",
-    "price": "$39,999",
-    "onSale": true,
-    "originalPrice": "$999,999",
-    "discount": "-15%",
-    "tags": ["Unavailable"]
-  },
-  {
-    "id": 24,
-    "title": "dumdum",
-    "photos": ["https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01", "https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01"],
-    "material": "oil and canvas",
-    "dimensions": "20x25in",
-    "price": "$39,999",
-    "onSale": true,
-    "originalPrice": "$999,999",
-    "discount": "-15%",
-    "tags": ["Unavailable"]
-  },
-  {
-    "id": 25,
-    "title": "dumdum",
-    "photos": ["https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01", "https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01"],
-    "material": "oil and canvas",
-    "dimensions": "20x25in",
-    "price": "$39,999",
-    "onSale": true,
-    "originalPrice": "$999,999",
-    "discount": "-15%",
-    "tags": ["Unavailable"]
-  },
-  {
-    "id": 26,
-    "title": "dumdum",
-    "photos": ["https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01", "https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82MDc5XC9tYWluXC96b29tXC8yNzYxNzgzXzk3MGM5NzQ2OWZjZDZjYTNkYzM0NTRjMjQyZDg3ZGYyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjExMzUsImhlaWdodCI6ODUwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJqcGVnIn19?signature=0843951105d08c4390d86716d41a6ad9f592619fd6755934d7fa0ec4b9ca0e01"],
-    "material": "oil and canvas",
-    "dimensions": "20x25in",
-    "price": "$39,999",
-    "onSale": true,
-    "originalPrice": "$999,999",
-    "discount": "-15%",
-    "tags": ["Unavailable"]
   }
 
 ]

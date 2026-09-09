@@ -202,7 +202,7 @@ footer {
 
     display: inline-block;
     content: "";
-    background-image: url(../Images/Icons/socials/facebook-color-svgrepo-com.svg);
+    background-image: url(../images/Icons/socials/facebook-color-svgrepo-com.svg);
   }
   #soc_Three {
 
@@ -214,9 +214,15 @@ footer {
 
     display: inline-block;
     content: "";
-    background-image: url(../Images/Icons/socials/tiktok-svgrepo-com\(1\).svg);
-    background-color: #414141;
+    background-image: url(../images/Icons/call_30dp_08BFFF_FILL0_wght400_GRAD0_opsz24.svg);
   }
+
+  #soc_Five {
+  
+      display: inline-block;
+      content: "";
+      background-image: url(../images/Icons/call_30dp_08BFFF_FILL0_wght400_GRAD0_opsz24.svg);
+    }
 
   @media (min-width: 1000px) {
 
@@ -408,6 +414,14 @@ footer {
       content: "";
       /* background-image: url(../Images/Icons/socials/tiktok-svgrepo-com\(1\).svg); */
     }
+
+    #soc_Five {
+  
+      display: inline-block;
+      content: "";
+      /* background-image: url(../Images/Icons/socials/tiktok-svgrepo-com\(1\).svg); */
+    }
+  
   
     .tos {
   
