@@ -1,11 +1,15 @@
+/* * {
+    outline: 1px solid red !important;
+} */
+
 section {
 
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     background-color: #272833;
-    height: 100vh;
-
+    height: max(100vh, 0px);
+    /* min-height: ; */
     color: white;
     position: relative;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -15,7 +19,11 @@ section {
 html {
 
     scroll-behavior: smooth;
-    transition: all 2000ms ease-in-out;
+    /* transition: all 2000ms ease-in-out; */
+}
+
+p {
+    line-height: 150%;
 }
 
 .arrow_Centerer {
@@ -187,17 +195,88 @@ float: center;
     display: flex;
     justify-content: left;
     z-index: 2;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* height: 100vh; */
+    /* height: 100vh; */
+    min-height: 100vh;
     
 }
 
 .section4_Container {
 
     width: 30vw;
-    height: 100%;
+    /* min-height: 100vh;
+    height: 100vh; */
     opacity: 0;
     visibility: 0;
+    padding: 2vw;
+    /* padding-bottom: clamp(80px, 20vw, 120px); */
     
+    
+}
+
+.section4_Container .main_Biography_Description {
+
+    background-color: #14141b;
+    padding: clamp(20px, 1vw, 50px);
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    
+    
+    
+}
+
+#panel_Quote {
+
+    
+    display: inline-block;
+    /* padding: 2vw; */
+    font-style: italic;
+    text-align: start;
+    
+}
+
+#panel_Quote::before {
+
+    display: inline-block;
+    margin-right: 2.5%;
+    content: "";
+    height: clamp(30px, 2vw, 80px);
+    width: clamp(30px, 2vw, 80px);
+    background-image: url(../images/Icons/quote66.svg);
+    background-size: cover;
+}
+
+#panel_Quote::after {
+
+    display: block;
+    float: inline-end;
+    /* margin-right: 2vw; */
+    /* margin-left: auto; */
+    content: "";
+    height: clamp(30px, 2vw, 80px);
+    width: clamp(30px, 2vw, 80px);
+    background-image: url(../images/Icons/quote99.svg);
+    background-size: cover;
+}
+
+#quote_Author_Panel {
+
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2vw;
+    text-align: end;
+    padding: 0 1vw;
+    
+}
+
+#section3Undercontainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 2.5vh, 40px);
 }
 
 .section_Slide_Right {
@@ -220,7 +299,8 @@ float: center;
     text-align: center;
     line-height: 200%;
     transition: all 200ms ease-in-out;
-    
+    /* line-height: 200%; */
+    /* min-height: calc(9*100vw/16) */
     
 }
 
@@ -228,6 +308,100 @@ float: center;
 
     z-index: -1;
 }
+
+.about_Section_before_5 {
+    min-height: 100vh;
+    height: max-content;
+    padding-block: var(--section-separator-unit);
+    padding-inline: 5vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: clamp(80px, 20vw, 120px);
+}
+
+.about_Section_before_5 .arrow_Centerer {
+    left: 0;
+}
+
+.literature_Grid {
+
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 15vw, 280px), 20vw));
+    gap: 2vw;
+    padding: 1vw;
+    /* background-color: rgb(43, 44, 54); */
+    grid-template-rows: min-content;
+}
+
+.literature_Item {
+    background-color: rgba(23, 24, 32, 0.95);
+    padding: 5%;
+    /* min-height: max-content; */
+    position: relative;
+    /* height: clamp(550px,30vh, 2000px); */
+    width: minmax(clamp(100px, 15vw, 280px), 20vw);
+}
+
+.literature_Item:hover {
+    transform: scale(105%);
+}
+
+.literature_Item_Upper_Half {
+
+    height: 100%;
+}
+
+.literature_Image_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: auto; */
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.literature_Image {
+
+    /* height: 100%; */
+    max-height: 100%;
+    width: 100%;
+    
+
+}
+
+.literature_Item_Lower_Half {
+
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    /* left: 0; */
+    height: 30%;
+    width: 90%;
+    background-color: rgba(23, 24, 32, 0.753);
+    backdrop-filter: blur(5px);
+    padding: 5%;
+    gap: 0.5rem;
+
+}
+
+.lit_Item_Title {
+
+    font-size: var(--fs-body-lg);
+    font-weight: bold;
+}
+
+.lit_Item_Date {
+    font-size: var(--fs-body-md);
+}
+.publication_Date {
+
+    font-weight: bold;
+}
+
 
 /* .about_Section_5 {
 
@@ -265,7 +439,7 @@ float: center;
 .section5_Description {
 
     width: 70%;
-    line-height: 200%;
+    
 }
 
 .exponat {
@@ -379,7 +553,7 @@ float: center;
 
     section {
 
-        min-height: max-content;
+        min-height: unset;
         height: unset;
         display: flex;
         gap: 5vw;
@@ -418,6 +592,44 @@ float: center;
         /* padding-top: calc(2*var(--section-separator-unit)); */
     }
 
+     #quote_Description {
+
+        overflow: unset;
+    }
+
+    .section4_Container {
+
+        height: auto;
+    }
+
+    .literature_Grid {
+
+        
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 22vw, 280px), 1fr));
+        gap: 2vh;
+        padding: 1vw;
+        /* background-color: rgb(43, 44, 54); */
+        grid-auto-rows: max-content; 
+    }
+
+    .literature_Item {
+        background-color: rgba(23, 24, 32, 0.95);
+        padding: 5%;
+        /* min-height: max-content; */
+        position: relative;
+        height: none;
+        min-height: none;
+        /* width: minmax(clamp(100px, 15vw, 280px), 20vw); */
+    }
+
+    .literature_Image_Container {
+
+        background-color: unset;
+    }
+
     .section5_Container {
 
         display: flex;
@@ -434,6 +646,7 @@ float: center;
         flex-direction: column-reverse; */
         padding-inline: 5vw;
         gap: 5vw;
+        width: 100vw;
     }
 
     .sign_Up_Part {
@@ -560,13 +773,13 @@ float: center;
   from {
     translate: -50%;
     /* scale: 200% 1; */
-    position: absolute;
+    /* position: absolute; */
   }
 
   to {
     translate: 0;
     /* scale: 100% 1; */
-    position: relative;
+    /* position: relative; */
   }
 }
 
@@ -574,12 +787,12 @@ float: center;
   from {
     translate: 50%;
     /* scale: 200% 1; */
-    position: absolute;
+    /* position: absolute; */
   }
 
   to {
     translate: 0;
     /* scale: 100% 1; */
-    position: relative;
+    /* position: relative; */
   }
 }

@@ -1,6 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const itemId = urlParams.get('id');
 
+const htmlLang = document.documentElement.getAttribute('lang');
+const currentLang = (htmlLang === 'en') ? 'english' : 'georgian';
+
 fetch('../data/data.json')
     .then(response => response.json())
     .then(items => {
@@ -17,9 +20,10 @@ fetch('../data/data.json')
         }
 
         // TEXT POPULATION!!!
-        document.getElementById('the_Item_Title').textContent = item.title;
-        document.getElementById('the_Item_Price').textContent = item.price ? item.price : 'Price Undisclosed';
-        document.title = item.title;
+        document.getElementById('the_Item_Title').textContent = item.title[currentLang];
+        let price_Display = {"english": "Contact Us For Details", "georgian": "დეტალებზე დაგვიკავშირდით"}
+        document.getElementById('the_Item_Price').textContent = item.price ? item.price : price_Display[currentLang];
+        document.title = item.title[currentLang];
 
         // IMAGE POPULATION!!!
         const mainImage = document.querySelector('.product_Image');
@@ -65,7 +69,7 @@ fetch('../data/data.json')
         if (item.material) {
             const materialSpecSlot = document.getElementById("#material_Spec");
             
-            materialSpecSlot.textContent = item.material;
+            materialSpecSlot.textContent = item.material[currentLang];
         }
 
         if (item.dimensions) {

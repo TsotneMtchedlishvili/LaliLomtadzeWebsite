@@ -121,6 +121,11 @@
 
   }
 
+  .nav_Item {
+
+    display: flex;
+    align-items: center;
+  }
 
   .logo_And_Btn {
     width: 10vw;
@@ -231,10 +236,16 @@
     /* height: 100%; */
     display: flex;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: auto;
+    gap: clamp(8px, 4vw, 15px);
     /* transition: all 200ms ease-in-out; */
 
+  }
+
+  .show_Dropdown .nav_List {
+
+    visibility: hidden;
   }
 
   .show_Dropdown .nav_Element {

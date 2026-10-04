@@ -7,7 +7,6 @@ const sentinel = document.querySelector('#sentinel');
 const navLinks = Array.from(document.querySelectorAll('.nav_Link'));
 const navBg = document.querySelector('.top_Panel_Before');
 const logoAndBtn = document.querySelector('.logo_And_Btn');
-const languageSwitchWiget = document.querySelector('.language_Selector');
 let temporaryList;
 let sentinelInvisible;
 
@@ -33,19 +32,12 @@ const navListMaker = () => {
     temporaryUl.appendChild(temporaryHomeNav);
     }) 
 
-    const temporaryHomeNav = document.createElement('li');
-    temporaryHomeNav.classList.add('nav_Item');
-    temporaryHomeNav.appendChild(languageSelector);
-    temporaryUl.appendChild(temporaryHomeNav);
-
     return temporaryUl;
 }
 
 
 const deleteList = (list) => {
 
-    const lastLinkItem = navList.lastElementChild;
-    lastLinkItem.appendChild(languageSelector);
     list.remove();
 
 };
@@ -73,8 +65,6 @@ const closeNav = () => {
 
 const hamburgerClicked = () => {
 
-    closeLangList(calcWindowWidth());
-
     if(document.querySelector('.temporary_Ul')) {
 
         temporaryList = document.querySelector('.temporary_Ul')
@@ -89,7 +79,6 @@ const hamburgerClicked = () => {
     if (navElementContainer.classList.contains("nav_Dropdown")) {
 
         navElementContainer.classList.remove("nav_Dropdown")
-        navElementContainer.style.overflow = "hidden";
         closeNav()
 
     }
@@ -97,18 +86,6 @@ const hamburgerClicked = () => {
 
         navElementContainer.classList.add("nav_Dropdown")
         openNav(temporaryList)
-
-        const isAnimating = async (element) => {
-            const animations = element.getAnimations();
-
-            // Wait for all of them to finish
-            await Promise.all(animations.map(anim => anim.finished));
-
-            navElementContainer.style.overflow = "visible";
-        }
-
-        isAnimating(navElementContainer);
-        
 
     }
 
@@ -147,16 +124,13 @@ const options = {
 
 const changeNav = (scrolledDown) => {
 
-     closeLangList(calcWindowWidth());
-
     if(scrolledDown) {
 
         
         navBg.style.transition = "all 400ms ease-in-out";
         const currentWidth = topPanel.getBoundingClientRect().width;
         topPanel.style.width = `${currentWidth}px`
-        topPanel.classList.add("show_Dropdown");
-        navList.style.visibility = "hidden";
+        topPanel.classList.add("show_Dropdown")
         
     }
     else {
@@ -172,7 +146,6 @@ const changeNav = (scrolledDown) => {
         topPanel.classList.remove("show_Dropdown")
         navElementContainer.classList.remove("nav_Dropdown")
         topPanel.style.width = `max-content`;
-        navList.style.visibility = "";
 
     }
 }
@@ -203,8 +176,6 @@ const callback = (entries, observer) => {
 // });
 
 window.addEventListener("resize", () => {
-
-     closeLangList(calcWindowWidth());
 
     if(window.innerWidth < 1000) {
 

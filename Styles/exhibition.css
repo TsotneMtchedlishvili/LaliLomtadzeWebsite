@@ -52,6 +52,8 @@ section {
     /* border-bottom: solid clamp(2px, 0.01vw, 4px) white; */
     /* margin-block: var(--section-separator-unit); */
     font-size: var(--fs-heading-md);
+    margin-bottom: calc(var(--section-separator-unit)/4);
+    font-weight: bold;
 }
 
 .exhibit_Date {

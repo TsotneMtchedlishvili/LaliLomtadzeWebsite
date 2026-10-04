@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="Styles/home.css">
     <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/gallery.css">
+    <link rel="stylesheet" href="Styles/languageSwitcher.css">
 
     <title>Art Main Page</title>
 </head>
@@ -52,22 +53,35 @@
             <nav class="nav_Element">
                 <ul class="nav_List">
                     <li class="nav_Item">
-                        <a href="index.html" class="nav_Link">Home</a>
+                        <a href="index.html" class="nav_Link">მთავარი</a>
                     </li>
                     <li class="nav_Item">
-                        <a href="about.html" class="nav_Link">About</a>
+                        <a href="about.html" class="nav_Link">მხატვრის შესახებ</a>
                     </li>
                     <li class="nav_Item">
-                        <a href="gallery.html" class="nav_Link">Gallery</a>
+                        <a href="gallery.html" class="nav_Link">გალერეა</a>
                     </li>
                     <li class="nav_Item">
-                        <a href="exhibition.html" class="nav_Link">Exhibitions</a>
+                        <a href="exhibition.html" class="nav_Link">გამოფენები</a>
                     </li>
                     <li class="nav_Item">
-                        <a href="contact.html" class="nav_Link">Contact</a>
+                        <a href="contact.html" class="nav_Link">კონტაქტი</a>
+                    </li>
+                    <li class="nav_Item">
+                        <div class="language_Selector">
+                            <button class="language_Button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu">
+                                <img src="../images/Icons/translation-svgrepo-com.svg" alt="" aria-hidden="true" class="translation_Icon" height="25">Languages
+                            </button>
+                            <div class="language_List" id="language-menu" hidden>
+                                <a href="/"><img src="../images/Flags/flag-for-flag-georgia-svgrepo-com.svg" alt="" aria-hidden="true" class="language_Flag" height="25"> Georgian</a>
+                                <a href="/en/"><img src="../images/Flags/flag-for-flag-united-kingdom-svgrepo-com.svg" alt="" aria-hidden="true" class="language_Flag" height="25"> English</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
+                
             </nav>
+            
         </div>
         <div id="sentinel" aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; pointer-events: none; opacity: 0;"></div>
     </header>
@@ -76,9 +90,9 @@
 
         <section class="hero-split">
             <div class="hero-content">
-                <h1>Lali Lomtadze</h1>
+                <h1>ლალი ლომთაძე</h1>
                 <p>ლალი ლომთაძე დაიბადა თბილისში. 1979 წელს დაამთავრა თბილისის სახელმწიფო სამხატვრო აკადემიის სახვითი ხელოვნების ფაკულტეტი. მრავალი წლის განმავლობაში თავადაც ასწავლიდა სამხატვრო აკადემიაში კომპოზიციას. 1984 წლიდან დღემდე ასწავლის თბილისის სახელმწიფო უნივერსიტეტში. ასევე არის საქართველოს მხატვართა კავშირის გამგეობის წევრი. </p>
-                <a href="about.html" class="generic_Button">Read Artist Statement</a>
+                <a href="about.html" class="generic_Button">იხილეთ მეტი</a>
             </div>
             <div class="hero-Second-Half">
                 <div class="hero-video">
@@ -86,7 +100,7 @@
                 </div>
                 <p class="hero-Caption">
                     რაც თავი მახსოვს სულ ვხატავ. ბუნებით რომანტიკოსი ვარ. ჩემი დევიზია "ვეძებ სილამაზეს ყველაფერში." ჩემი ნამუშევრებით დადებით ემოციებს გამოვხატავ და მინდა ადამიანებს სიხარული მივანიჭო".
-ლალი ლომთაძე
+                    ლალი ლომთაძე
                 </p>
             </div>
         </section>
@@ -96,16 +110,16 @@
 
         <section class="exhibition-spotlight">
             <div class="exhibition-info">
-                <span>Current Exhibition</span>
-                <h3>Monoliths & Memory - Solo Show at City Gallery</h3>
+                <span>ბოლო გამოფენა</span>
+                <h2>ლალი ლომთაძის საიუბილეო გამოფენა - ეროვნული მუზეუმი</h2>
             </div>
-            <a href="exhibition.html" class="generic_Button">View Exhibition Details</a>
+            <a href="exhibition.html" class="generic_Button">იხილეთ გამოფენების დეტალები</a>
         </section>
 
         <section class="featured-section">
             <div class="section-header">
-                <h2>Featured Artworks</h2>
-                <a href="gallery.html">View All Works &rarr;</a>
+                <h2>გამორჩეული ნაშრომები</h2>
+                <a href="gallery.html">იხილეთ მეტი &rarr;</a>
             </div>
             <div class="gallery-grid">
                 
@@ -163,4 +177,5 @@
 </body>
 <script src="js/nav.js"></script>
 <script src="js/featuredGalleryList.js"></script>
+<script src="js/languageSwitcher.js"></script>
 </html>

@@ -172,6 +172,11 @@ h2 {
 .item_Details {
 
     width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2.5% 0;
 }
 
 .pricing {

@@ -181,7 +181,8 @@ body {
 .item_Page_Checkout {
 
     min-width: 15vw;
-    height: 90%;
+    /* height: 90%; */
+    height: max-content;
     background-color: rgba(23, 24, 32, 0.95);
 
     padding: 5% 0.8vw;
@@ -195,6 +196,8 @@ body {
 .item_Price {
 
     font-size: var(--fs-body-lg);
+    font-weight: bold;
+    /* text-align: center; */
 }
 
 .checkout_Button {
@@ -209,6 +212,7 @@ body {
     border-radius: calc(clamp(35px, 2vw + 0.35rem, 150px)/10);
     transition: all 150ms ease-out;
     font-weight: bold;
+    text-align: center;
 }
 
 .checkout_Button:hover {

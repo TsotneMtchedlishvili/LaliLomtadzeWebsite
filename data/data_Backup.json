@@ -1,15 +1,10 @@
 [
+
   {
     "id": 1,
-    "title": {
-      "english": "Ballerina",
-      "georgian": "ბალერინა"
-    },
+    "title": "Ballerina",
     "photos": ["../images/gallery/!Unsorted/20260817_175241266_iOS.jpg"],
-    "material": {
-      "english": "mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix.",
     "dimensions": "48-44",
     "price": "",
     "onSale": false,
@@ -19,15 +14,9 @@
   },
   {
     "id": 2,
-    "title": {
-      "english": "Evening",
-      "georgian": "საღამო"
-    },
+    "title": "Evening",
     "photos": ["../images/gallery/!Unsorted/20260817_175012135_iOS.png"],
-    "material": {
-      "english": "lithography",
-      "georgian": "ლითოგრაფია"
-    },
+    "material": "lithography",
     "dimensions": "48-60.5",
     "price": "",
     "onSale": false,
@@ -37,15 +26,9 @@
   },
   {
     "id": 3,
-    "title": {
-      "english": "Tree of Wishes",
-      "georgian": "ნატვრის ხე"
-    },
+    "title": "Tree of Wishes",
     "photos": ["../images/gallery/!Unsorted/20260817_174704595_iOS.png"],
-    "material": {
-      "english": "mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix.",
     "dimensions": "49-46",
     "price": "",
     "onSale": false,
@@ -55,15 +38,9 @@
   },
   {
     "id": 4,
-    "title": {
-      "english": "Bather",
-      "georgian": "მობანავე"
-    },
+    "title": "Bather",
     "photos": ["../images/gallery/!Unsorted/20260817_174336473_iOS.png"],
-    "material": {
-      "english": "mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix.",
     "dimensions": "49-38",
     "price": "",
     "onSale": false,
@@ -73,15 +50,9 @@
   },
   {
     "id": 5,
-    "title": {
-      "english": "Guardian Angel",
-      "georgian": "მფარველი ანგელოზი"
-    },
+    "title": "Guardian Angel",
     "photos": ["../images/gallery/!Unsorted/image0.jpg"],
-    "material": {
-      "english": "mix",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix",
     "dimensions": "55-50",
     "price": "",
     "onSale": false,
@@ -91,15 +62,9 @@
   },
   {
     "id": 6,
-    "title": {
-      "english": "Still Life Yellow Flowers",
-      "georgian": "ნატურმორტი ყვითელი ყვავილები"
-    },
+    "title": "Still Life Yellow Flowers",
     "photos": ["../images/gallery/!Unsorted/20260817_173940005_iOS.jpg"],
-    "material": {
-      "english": "mix",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix",
     "dimensions": "49-50",
     "price": "",
     "onSale": false,
@@ -109,15 +74,9 @@
   },
   {
     "id": 7,
-    "title": {
-      "english": "Yellow Ballerina",
-      "georgian": "ყვითელი ბალერინა"
-    },
+    "title": "Yellow Ballerina",
     "photos": ["../images/gallery/!Unsorted/20260817_173548096_iOS.jpg"],
-    "material": {
-      "english": "mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix.",
     "dimensions": "50-46",
     "price": "",
     "onSale": false,
@@ -127,15 +86,9 @@
   },
   {
     "id": 8,
-    "title": {
-      "english": "Spring",
-      "georgian": "გაზაფხული"
-    },
+    "title": "Spring",
     "photos": ["../images/gallery/!Unsorted/20260815_073642277_iOS.jpg"],
-    "material": {
-      "english": "mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "mix.",
     "dimensions": "48-88",
     "price": "",
     "onSale": false,
@@ -145,15 +98,9 @@
   },
   {
     "id": 9,
-    "title": {
-      "english": "Old Tbilisi",
-      "georgian": "ძველი თბილისი"
-    },
+    "title": "Old Tbilisi",
     "photos": ["../images/gallery/!Unsorted/20260814_114220101_iOS.jpg"],
-    "material": {
-      "english": "oil canvas",
-      "georgian": "ტილო ზეთი"
-    },
+    "material": "oil canvas",
     "dimensions": "50-87",
     "price": "",
     "onSale": false,
@@ -163,15 +110,9 @@
   },
   {
     "id": 10,
-    "title": {
-      "english": "Dream",
-      "georgian": "სიზმარი"
-    },
+    "title": "Dream",
     "photos": ["../images/gallery/!Unsorted/20260814_114011727_iOS.jpg"],
-    "material": {
-      "english": "oil canvas",
-      "georgian": "ტილო ზეთი"
-    },
+    "material": "oil canvas",
     "dimensions": "49-45",
     "price": "",
     "onSale": false,
@@ -181,15 +122,9 @@
   },
   {
     "id": 11,
-    "title": {
-      "english": "View of Tbilisi",
-      "georgian": "თბილისის ხედი"
-    },
+    "title": "View of Tbilisi",
     "photos": ["../images/gallery/!Unsorted/20260814_113830928_iOS.jpg"],
-    "material": {
-      "english": "oil canvas",
-      "georgian": "ტილო ზეთი"
-    },
+    "material": "oil canvas",
     "dimensions": "50-70",
     "price": "",
     "onSale": false,
@@ -199,15 +134,9 @@
   },
   {
     "id": 12,
-    "title": {
-      "english": "Svaneti",
-      "georgian": "სვანეთი"
-    },
+    "title": "Svaneti",
     "photos": ["../images/gallery/!Unsorted/20260814_113615225_iOS.jpg"],
-    "material": {
-      "english": "Cold nail and aquatint",
-      "georgian": "მშრალი ნემსი და აკვატინტა"
-    },
+    "material": "Cold nail and aquatint",
     "dimensions": "44,5-49",
     "price": "",
     "onSale": false,
@@ -217,15 +146,9 @@
   },
   {
     "id": 13,
-    "title": {
-      "english": "Fan",
-      "georgian": "მარაო"
-    },
+    "title": "Fan",
     "photos": ["../images/gallery/!Unsorted/20260814_113351212_iOS.jpg"],
-    "material": {
-      "english": "Cold nail",
-      "georgian": "მშრალი ნემსი"
-    },
+    "material": "Cold nail",
     "dimensions": "45-50",
     "price": "",
     "onSale": false,
@@ -235,15 +158,9 @@
   },
   {
     "id": 14,
-    "title": {
-      "english": "Butterfly",
-      "georgian": "პეპელა"
-    },
+    "title": "Butterfly",
     "photos": ["../images/gallery/!Unsorted/20260814_113115418_iOS.jpg"],
-    "material": {
-      "english": "Cold nail",
-      "georgian": "მშრალი ნემსი"
-    },
+    "material": "Cold nail",
     "dimensions": "49-55",
     "price": "",
     "onSale": false,
@@ -253,15 +170,9 @@
   },
   {
     "id": 15,
-    "title": {
-      "english": "Autumn",
-      "georgian": "შემოდგომა"
-    },
+    "title": "Autumn",
     "photos": ["../images/gallery/!Unsorted/20260814_112534881_iOS.jpg"],
-    "material": {
-      "english": "Mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "Mix.",
     "dimensions": "42,5-48",
     "price": "",
     "onSale": false,
@@ -271,15 +182,9 @@
   },
   {
     "id": 16,
-    "title": {
-      "english": "Georgian Motives",
-      "georgian": "ქართული მოტივები"
-    },
+    "title": "Georgian Motives",
     "photos": ["../images/gallery/!Unsorted/20260814_112238970_iOS.jpg"],
-    "material": {
-      "english": "Mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "Mix.",
     "dimensions": "50-53",
     "price": "",
     "onSale": false,
@@ -289,15 +194,9 @@
   },
   {
     "id": 17,
-    "title": {
-      "english": "Spring Evening",
-      "georgian": "გაზაფხულის საღამო"
-    },
+    "title": "Spring Evening",
     "photos": ["../images/gallery/!Unsorted/20260814_111942746_iOS.jpg"],
-    "material": {
-      "english": "Mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "Mix.",
     "dimensions": "46-49",
     "price": "",
     "onSale": false,
@@ -307,15 +206,9 @@
   },
   {
     "id": 18,
-    "title": {
-      "english": "Daisies",
-      "georgian": "გვირილები"
-    },
+    "title": "Daisies",
     "photos": ["../images/gallery/!Unsorted/20260814_111735726_iOS.jpg"],
-    "material": {
-      "english": "Mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "Mix.",
     "dimensions": "50-46",
     "price": "",
     "onSale": false,
@@ -325,15 +218,9 @@
   },
   {
     "id": 19,
-    "title": {
-      "english": "Big Elephant",
-      "georgian": "დიდი სპილო"
-    },
+    "title": "Big Elephant",
     "photos": ["../images/gallery/!Unsorted/20260814_111601107_iOS.jpg"],
-    "material": {
-      "english": "Mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "Mix.",
     "dimensions": "40,5-54",
     "price": "",
     "onSale": false,
@@ -343,15 +230,9 @@
   },
   {
     "id": 20,
-    "title": {
-      "english": "Annunciation",
-      "georgian": "ხარება"
-    },
+    "title": "Annunciation",
     "photos": ["../images/gallery/!Unsorted/20260814_111455109_iOS.jpg"],
-    "material": {
-      "english": "Mix.",
-      "georgian": "შერეული ტექნიკა"
-    },
+    "material": "Mix.",
     "dimensions": "24.5-28",
     "price": "",
     "onSale": false,
@@ -359,4 +240,5 @@
     "discount": "",
     "tags": []
   }
+
 ]

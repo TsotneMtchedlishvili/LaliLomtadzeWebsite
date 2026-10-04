@@ -5,6 +5,9 @@ const allTag = document.querySelector(".gallery_Tag.all");
 let listController = null;
 let signal = null;
 
+const htmlLang = document.documentElement.getAttribute('lang');
+const currentLang = (htmlLang === 'en') ? 'english' : 'georgian';
+
 let listOFActiveAsyncFunctions = [];
 
 const tagToggle = () => {
@@ -204,9 +207,9 @@ const addButtonFunctionality = (item) => {
 // ELEMENTS BUIT HERE
 const createListingCard = (item) => {
   const {
-    title = '',
+    title = {},
     photos = [],
-    material = '',
+    material = {},
     dimensions = '',
     price = '',
     onSale = false,
@@ -246,7 +249,8 @@ const createListingCard = (item) => {
   const previewImg = document.createElement('img');
   previewImg.className = 'listing_Preview';
   previewImg.src = photos[0] ?? '';
-  previewImg.alt = title;
+  previewImg.alt = title[currentLang];
+  // console.log("here is "+title[currentLang])
 
   const btnRight = document.createElement('button');
   btnRight.className = 'thumbnail_Navigation_Button_Right tnb';
@@ -276,7 +280,7 @@ const createListingCard = (item) => {
 
   const itemTitle = document.createElement('h2');
   itemTitle.className = 'item_Title';
-  itemTitle.textContent = title;
+  itemTitle.textContent = title[currentLang];
 
   const subDescription = document.createElement('div');
   subDescription.className = 'item_Sub_Description';
@@ -286,7 +290,7 @@ const createListingCard = (item) => {
 
   const matType = document.createElement('p');
   matType.className = 'material_Type';
-  matType.textContent = material;
+  matType.textContent = material[currentLang];
 
   const itemDim = document.createElement('p');
   itemDim.className = 'item_Dimension';
@@ -313,9 +317,11 @@ const createListingCard = (item) => {
     const pricing = document.createElement('div');
     pricing.className = 'pricing';
 
+    pricing.hidden = true;
+
     const currentPrice = document.createElement('span');
     currentPrice.className = 'current_Price';
-    price ? currentPrice.textContent = price : currentPrice.textContent = "Price Undisclosed"
+    price ? currentPrice.textContent = price : currentPrice.textContent = ""
     pricing.append(currentPrice);
 
     if (onSale){
@@ -345,7 +351,8 @@ const createListingCard = (item) => {
 
   const zoomBtn = document.createElement('button');
   zoomBtn.className = 'zoom_Button generic_Button';
-  zoomBtn.textContent = 'Preview';
+  let preview_Text = {"english": "Preview", "georgian": "პრევიუ"}
+  zoomBtn.textContent = preview_Text[currentLang];
   zoomBtn.addEventListener('click', () => addButtonFunctionality(photos[currentPhotoIndex]));
 
   zoomContainer.append(zoomBtn);
